@@ -129,7 +129,7 @@ jobs:
       version: ${{ github.sha }}
 
   deploy-helm-staging:
-    name: Deploy Helm
+    name: Deploy Helm Staging
     uses: ./.github/workflows/deployment-workflow.yml
     needs: deploy-helm-dev
     secrets: inherit

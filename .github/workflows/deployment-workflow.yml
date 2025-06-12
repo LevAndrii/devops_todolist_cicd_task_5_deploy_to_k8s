@@ -6,14 +6,14 @@ on:
     inputs:
       environment:
         required: true
-        description: 'Envorionment to deploy to'
+        description: 'Envirinment to deploy to'
         type: string
       version:
         description: 'Image version'
         required: true
         type: string
       helm-values-path:
-        description: 'Path fo Values'
+        description: 'Path to Values'
         type: string
         default: './todoapp/values.yaml'
       helm-release-name:
