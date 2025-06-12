@@ -9,6 +9,7 @@ on:
         description: 'Envorionment to deploy to'
         type: string
       version:
+        description: 'Image version'
         required: true
         type: string
       helm-values-path:
@@ -78,4 +79,4 @@ jobs:
           --set todoapp.secrets.DB_USER="${{ secrets.DB_USER }}" \
           --set todoapp.secrets.DB_PASSWORD="${{ secrets.DB_PASSWORD }}" \
           --set todoapp.secrets.DB_HOST="${{ secrets.DB_HOST }}" \
-          --set todoapp.image.tag=${{ github.sha }}
+          --set todoapp.image.version=${{ inputs.version }}
