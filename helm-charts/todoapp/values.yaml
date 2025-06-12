@@ -9,7 +9,7 @@ todoapp:
   image:
     repository: ikulyk404/todoapp
     tag: "4.0.1"
-    nodeport: 30007
+  nodeport: 30007
 
   resources:
     requests:
